@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Keyup Event Listener</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="../Bootsrap/1 Font Awesome/fontawesome-5.8.1 all.css">
+    <link rel="stylesheet" href="../Bootsrap/2 BS CSS/bootstrap.css">
+    <link rel="stylesheet" href="../Bootsrap/2 BS CSS/mdb.min.css">
+    <link rel="stylesheet" href="../Js Css/">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">DOM Keyup Event Listener</a>
+    </nav>
+    <!---------------------START HERE---------------------->
+    <div class="container mt-5">
+        <!--strat-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-lg-5 ">
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h2 class="text-white">Key Up Event Listener</h2>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="textUsername">User Name</label>
+                                    <input type="text" id="textUsername" class="form-control text-primary">
+                                    <label for="textUsername">Password</label>
+                                    <input type="password" id="textPassword" class="form-control text-primary">
+                                    <label for="textUsername">Email</label>
+                                    <input type="mail" id="textMail" class="form-control text-primary">
+                                </div>
+                            </form>
+                            <div class="card mt-3">
+                                <div class="card-header bg-danger">
+                                    <h2 class="text-white">Details Entered</h2>
+                                </div>
+                                <div class="card-body">
+                                    <h3>User Name : <span class="text-success" id="userNameDetails"></span></h3>
+                                    <h3>Password : <span class="text-success" id="passwordDetails"></span></h3>
+                                    <h3>Email : <span class="text-success" id="emailDetails"></span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END-->
+    </div>
+    <!---------------------END HERE---------------------->
+    
+    <div style="margin-bottom: 20px;"></div>
+
+    <!--Bootstrap JS Files-->
+    <script src="../Bootsrap/3 BS JQuery/jquery-3.6.0.min.js"></script>
+    <script src="../Bootsrap/4 BS Popper/popper.min.js"></script>
+    <script src="../Bootsrap/5 BS JS/bootstrap.js"></script>
+    <script src="../Bootsrap/5 BS JS/mdb.min.js"></script>
+    <!--Local Js File-->
+    <script src="../Js/19 keyUpEvent Btstrp.js"></script>
+</body>
+</html>

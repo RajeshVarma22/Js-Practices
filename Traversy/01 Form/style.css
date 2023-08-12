@@ -1,0 +1,12 @@
+.error {
+    background-color: red;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+li{
+    background-color: cadetblue;
+    padding: 5px;
+    padding-left: 10px;
+    color: rgb(238, 242, 246);
+}

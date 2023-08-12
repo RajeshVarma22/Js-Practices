@@ -1,0 +1,21 @@
+.is-form-valid {
+    border: 1px solid limegreen;
+    border-left: 5px solid limegreen;
+    box-shadow: 0 0 5px limegreen;
+}
+.is-form-invalid {
+    /* border: none; */
+    /* outline: none; */
+    border-bottom: 2px orangered;
+    /* border: 1px solid orangered;
+    border-left: 5px solid orangered; */
+    box-shadow: 0 0 5px orangered;
+}
+.text-success {
+    color: limegreen !important;
+    font-size: 14px;
+}
+.text-danger {
+    color: orangered !important;
+    font-size: 14px;
+}

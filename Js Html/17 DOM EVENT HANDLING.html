@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM EVENT HANDLING</title>
+    <link rel="stylesheet" href="../Js Css/17 DOM EVENT HANDLING.css">
+</head>
+<body>
+    <h1>DOM EVENT HANDLING</h1>
+    <div id="div1">
+        <h2 id="msg-1"></h2>
+        <button onclick="button1On()">Click for Grey</button>
+        <button ondblclick="button2On()">Doubke-Click for Black</button>
+        <button onmouseover="button3On()">onmouseover for Brown</button>
+        <button onmousewheel="button4On()">onmousewheel for Green</button>
+        <button onclick="button5On()">Click to get the types of buttons</button>
+
+    </div>  
+    <div id="div2">
+        <h2 id="sthortCut">Hello</h1>
+        <button onclick="shortCutButton('Welcome','Green')">Click the button for the background color = Green</button>
+        <button onclick="shortCutButton('Welcome','Grey')">Click the button for the background color = Grey</button>
+        <button onclick="shortCutButton('Welcome','Blue')">Click the button for the background color = Blue</button>
+        <button onclick="shortCutButton('Welcome','Purple')">Click the button for the background color = Purple</button>
+        <button onclick="shortCutButton('Welcome','Yellow')">Click the button for the background color = Yellow</button>
+        <button onclick="shortCutButton('Welcome','Black')">Click the button for the background color = Black</button>
+        <button onclick="shortCutButton('Welcome','red')">Click the button for the background color = Red</button>
+        <button onclick="shortCutButton('Welcome','Violet')">Click the button for the background color = Violet</button>
+    </div>
+    <div>
+        <h2>These are the List Of button functions</h2>
+        <ol>
+            <li>onabort: null</li>
+            <li>onafterprint: null</li>
+            <li>onanimationend: null</li>
+            <li>onanimationiteration: null</li>
+            <li>onanimationstart: null</li>
+            <li>onappinstalled: null</li>
+            <li>onauxclick: null</li>
+            <li>onbeforeinstallprompt: null</li>
+            <li>onbeforematch: null</li>
+            <li>onbeforeprint: null</li>
+            <li>onbeforeunload: null</li>
+            <li>onbeforexrselect: null</li>
+            <li>onblur: null</li>
+            <li>oncancel: null</li>
+            <li>oncanplay: null</li>
+            <li>oncanplaythrough: null</li>
+            <li>onchange: null</li>
+            <li>onclick: null</li>
+            <li>onclose: null</li>
+            <li>oncontextlost: null</li>
+            <li>oncontextmenu: null</li>
+            <li>oncontextrestored: null</li>
+            <li>oncuechange: null</li>
+            <li>ondblclick: null</li>
+            <li>ondevicemotion: null</li>
+            <li>ondeviceorientation: null</li>
+            <li>ondeviceorientationabsolute: null</li>
+            <li>ondrag: null</li>
+            <li>ondragend: null</li>
+            <li>ondragenter: null</li>
+            <li>ondragleave: null</li>
+            <li>ondragover: null</li>
+            <li>ondragstart: null</li>
+            <li>ondrop: null</li>
+            <li>ondurationchange: null</li>
+            <li>onemptied: null</li>
+            <li>onended: null</li>
+            <li>onerror: null</li>
+            <li>onfocus: null</li>
+            <li>onformdata: null</li>
+            <li>ongotpointercapture: null</li>
+            <li>onhashchange: null</li>
+            <li>oninput: null</li>
+            <li>oninvalid: null</li>
+            <li>onkeydown: null</li>
+            <li>onkeypress: null</li>
+            <li>onkeyup: null</li>
+            <li>onlanguagechange: null</li>
+            <li>onload: null</li>
+            <li>onloadeddata: null</li>
+            <li>onloadedmetadata: null</li>
+            <li>onloadstart: null</li>
+            <li>onlostpointercapture: null</li>
+            <li>onmessage: null</li>
+            <li>onmessageerror: null</li>
+            <li>onmousedown: null</li>
+            <li>onmouseenter: null</li>
+            <li>onmouseleave: null</li>
+            <li>onmousemove: null</li>
+            <li>onmouseout: null</li>
+            <li>onmouseover: null</li>
+            <li>onmouseup: null</li>
+            <li>onmousewheel: null</li>
+            <li>onoffline: null</li>
+            <li>ononline: null</li>
+            <li>onpagehide: null</li>
+            <li>onpageshow: null</li>
+            <li>onpause: null</li>
+            <li>onplay: null</li>
+            <li>onplaying: null</li>
+            <li>onpointercancel: null</li>
+            <li>onpointerdown: null</li>
+            <li>onpointerenter: null</li>
+            <li>onpointerleave: null</li>
+            <li>onpointermove: null</li>
+            <li>onpointerout: null</li>
+            <li>onpointerover: null</li>
+            <li>onpointerrawupdate: null</li>
+            <li>onpointerup: null</li>
+            <li>onpopstate: null</li>
+            <li>onprogress: null</li>
+            <li>onratechange: null</li>
+            <li>onrejectionhandled: null</li>
+            <li>onreset: null</li>
+            <li>onresize: null</li>
+            <li>onscroll: null</li>
+            <li>onsearch: null</li>
+            <li>onsecuritypolicyviolation: null</li>
+            <li>onseeked: null</li>
+            <li>onseeking: null</li>
+            <li>onselect: null</li>
+            <li>onselectionchange: null</li>
+            <li>onselectstart: null</li>
+            <li>onslotchange: null</li>
+            <li>onstalled: null</li>
+            <li>onstorage: null</li>
+            <li>onsubmit: null</li>
+            <li>onsuspend: null</li>
+            <li>ontimeupdate: null</li>
+            <li>ontoggle: null</li>
+            <li>ontransitioncancel: null</li>
+            <li>ontransitionend: null</li>
+            <li>ontransitionrun: null</li>
+            <li>ontransitionstart: null</li>
+            <li>onunhandledrejection: null</li>
+            <li>onunload: null</li>
+            <li>onvolumechange: null</li>
+            <li>onwaiting: null</li>
+            <li>onwebkitanimationend: null</li>
+            <li>onwebkitanimationiteration: null</li>
+            <li>onwebkitanimationstart: null</li>
+            <li>onwebkittransitionend: null</li>
+            <li>onwheel: null</li>
+        </ol>
+    </div>
+   <script src="../Js/17 DOM event handling.js"></script>
+</body>

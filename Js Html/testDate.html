@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Hi</h1>
+  <script>
+
+    // let firdaysGenerator = (day) => {
+    //   console.log(day)
+    // }
+
+    // const fridayGen = firdaysGenerator("2021-06-04")
+
+    function* fridaysGenerator(date) {
+      const startDate = new Date(date);
+      let currentDate = new Date(startDate);
+      console.log(currentDate)
+
+      while (true) {
+        const nextFriday = getNextFriday(currentDate);
+        yield formatDate(nextFriday);
+
+        if (currentDate.toISOString() === nextFriday.toISOString()) {
+          break;
+        }
+
+        currentDate.setDate(currentDate.getDate() + 7);
+      }
+    }
+
+    function getNextFriday(date) {
+      const dayOfWeek = date.getDay();
+      const daysUntilFriday = (5 - dayOfWeek + 7) % 7;
+      const nextFriday = new Date(date);
+      nextFriday.setDate(date.getDate() + daysUntilFriday);
+      return nextFriday;
+    }
+
+    function formatDate(date) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    }
+
+    const fridayGen = fridaysGenerator("2021-06-04")
+
+    console.log(fridayGen.next().value)
+
+
+    function solution(A) {
+      let maxLength = 0;
+
+      function getUniqueLetters(str) {
+        let uniqueLetters = new Set();
+        for (let i = 0; i < str.length; i++) {
+          uniqueLetters.add(str[i]);
+        }
+        return uniqueLetters;
+      }
+
+      function findLongestString(A, currentString) {
+        if (currentString.length > maxLength) {
+          maxLength = currentString.length;
+        }
+
+        for (let i = 0; i < A.length; i++) {
+          let newString = currentString + A[i];
+
+          let uniqueLetters = getUniqueLetters(newString);
+          if (newString.length === uniqueLetters.size) {
+            findLongestString(A, newString);
+          }
+        }
+        
+      }
+
+      findLongestString(A, "");
+
+      return maxLength;
+    }
+
+    // Example usage:
+    const A1 = ["co", "dil", "ity"];
+    console.log(solution(A1)); // Output: 5
+
+    const A2 = ["abc", "yyy", "def", "csv"];
+    console.log(solution(A2)); // Output: 6
+
+    const A3 = ["potato", "kayak", "banana", "racecar"];
+    console.log(solution(A3)); // Output: 0
+
+    const A4=["eva", "jqw", "tyn", "jan"]
+    console.log(solution(A4))
+  </script>
+</body>
+
+</html>

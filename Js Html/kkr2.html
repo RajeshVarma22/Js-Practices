@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="stylesheet" href="../Bootsrap/1 Font Awesome/fontawesome-5.8.1 all.css">
+    <link rel="stylesheet" href="../Bootsrap/2 BS CSS/bootstrap.css">
+    <link rel="stylesheet" href="../Bootsrap/2 BS CSS/mdb.min.css">
+    <link rel="stylesheet" href="../Js Css/">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand"></a>
+    </nav>
+    <!---------------------START HERE---------------------->
+    <div class="container mt-5">
+        <!--strat-->
+        <div class="card bg-primary" style="box-shadow: 0px 5px 5px black;">
+            <div class="card-header border text-center">
+                <img src="../Fly.jpg" alt="" class="w-100" style="border-radius: 5px;">
+            </div>
+            <div class="card-body border">
+                <div class="row">
+                    <div class="col-6 text-center border">
+                        <button class="btn p-3 bg-success m-3" onclick="like()"><i class="fa-solid fa-thumbs-up fa-3x text-white "></i></button>
+                        <h3 class="text-white" id="like">0</h3>
+                    </div>
+                    <div class="col-6 text-center border">
+                        <button class="btn p-3 bg-warning m-3" onclick="disLike()"><i class="fa-solid fa-thumbs-down fa-3x text-white"></i></button>
+                        <h3 class="text-white" id="disLike">0</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-center border">
+                <h2 class="text-white">Total = <span id="total">0</span></h2>
+            </div>
+        </div>
+        <!--END-->
+    </div>
+    <!---------------------END HERE---------------------->
+    
+    <div style="margin-bottom: 20px;"></div>
+
+    <!--Bootstrap JS Files-->
+    <script src="../Bootsrap/3 BS JQuery/jquery-3.6.0.min.js"></script>
+    <script src="../Bootsrap/4 BS Popper/popper.min.js"></script>
+    <script src="../Bootsrap/5 BS JS/bootstrap.js"></script>
+    <script src="../Bootsrap/5 BS JS/mdb.min.js"></script>
+    <!--Local Js File-->
+    <script>
+
+        let likeCount = document.querySelector('#like');
+        let disLikeCount = document.querySelector('#disLike');
+        let total  = document.querySelector('#total');
+        let like_count = 0;
+        let dislike_count = 0;
+        let value = 0;
+        let like = () => {
+            like_count += 1;
+            likeCount.innerHTML = like_count;
+            // console.log(like_count);
+            displayTotal()
+        }
+        let disLike = () => {
+            dislike_count += 1;
+            disLikeCount.innerHTML = dislike_count;
+            // console.log(dislike_count);
+            displayTotal()
+        }
+
+        let displayTotal = () => {
+            value = like_count + dislike_count;
+            total.innerHTML = value;
+        }
+ 
+    </script>
+</body>
+</html>

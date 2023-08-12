@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="../00 Bootsrap/1 Font Awesome/fontawesome-5.8.1 all.css">
+    <link rel="stylesheet" href="../00 Bootsrap/2 BS CSS/bootstrap.css">
+    <link rel="stylesheet" href="../00 Bootsrap/2 BS CSS/mdb.min.css">
+</head>
+<body>
+    <header id="main-header" class="bg-secondary text-white p-2 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 id="header-title">Dom Selectors <span style="display: none;">Rajesh</span></h1>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <input type="text" class="form-control" id="filter" placeholder="Search Items">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container" id="cont">
+        <div class="card card-body extra">
+            <h1 id="newInsert">Insert Above</h1>
+        </div>
+        <div class="card card-body" id="main">
+            <h2 class="title">Add Items</h2>
+            <form class="form-inline mb-3" id="addForm">
+                <input type="text" class="form-control me-2 mb-2" placeholder="Input here">
+                <!-- <select class="form-control mb-3 change">
+                    <option value="">Select here</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select> -->
+                <input type="submit" value="submit" class="submit btn btn-success">
+            </form>
+            <h2 class="title">Items</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item">Item 1
+                    <button style="float: right;" class="btn btn-sm btn-danger float-right me-0 delete">X</button>
+                </li>
+                <li class="list-group-item">Item 2
+                                        <button style="float: right;" class="btn btn-sm btn-danger float-right me-0 delete">X</button>
+                </li>
+                <li class="list-group-item">Item 3
+                                        <button style="float: right;" class="btn btn-sm btn-danger float-right me-0 delete">X</button>
+                </li>
+                <li class="list-group-item">Item 4
+                                        <button style="float: right;" class="btn btn-sm btn-danger float-right me-0 delete">X</button>
+                </li>
+            </ul>
+            <br>
+            <button  class="btn btn-primary btn-block" id="button">Click Here</button>
+        </div>
+        <br>
+        <div id="box" class = "output" style="height: 250px; width: 350px; background-color: lightgrey;">
+            <h1 id="textEvents">Mouse Events</h1>
+        </div>
+        <br>
+    </div>
+
+
+    <script src="../00 Bootsrap/3 BS JQuery/jquery-3.6.0.min.js"></script>
+    <script src="../00 Bootsrap/4 BS Popper/popper.min.js"></script>
+    <script src="../00 Bootsrap/5 BS JS/bootstrap.js"></script>
+    <script src="../00 Bootsrap/5 BS JS/mdb.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

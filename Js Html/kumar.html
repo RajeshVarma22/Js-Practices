@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Hello</h1>
+  <table>
+    <tbody id="tbody">
+
+    </tbody>
+  </table>
+
+  <script>
+    let a = []
+    for (let i = 0; i <= 100; i++) {
+      a[i] = i;
+    }
+    let m = (arr) => {
+      let cnt = 0;
+      let rws = "<tr>"
+      for(let j = 0; j < a.length; j++ ){
+        rws += `<td>${a[j]}</td>`
+        cnt++;
+        if(cnt === 15) {
+          cnt = 0
+          rws += "<tr></tr>"
+        }
+      }
+      return rws
+    }
+
+    document.querySelector("#tbody").innerHTML = m(a)
+  </script>
+</body>
+
+</html>

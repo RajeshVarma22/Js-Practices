@@ -1,0 +1,14 @@
+.error{
+    padding: 1px;
+    padding-left: 15px;
+    box-shadow: 0px 3px 3px black;
+    border-radius: 8px;
+    color: aliceblue;
+    background-color: brown;
+}
+
+.dltbtn {
+    font-weight: bold;
+    float: right;
+    /* display: ruby; */
+}

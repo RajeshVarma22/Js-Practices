@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="../Bootsrap/1 Font Awesome/fontawesome-5.8.1 all.css">
+    <link rel="stylesheet" href="../Bootsrap/2 BS CSS/bootstrap.css">
+    <link rel="stylesheet" href="../Bootsrap/2 BS CSS/mdb.min.css">
+    <link rel="stylesheet" href="../Js Css/">
+    <style>
+        
+        .notes {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-danger">
+        <a href="#" class="navbar-brand">Task List App_1-LocalStorage</a>
+    </nav>
+    <!---------------------START HERE---------------------->
+    <div class="container mt-5">
+        <!--strat-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            <h1 class="display-5">Task List</h1>
+                        </div>
+                        <div class="card-body">
+                            <form id="task-form">
+                                <div class="form-group">
+                                    <input id="input-item" type="text" class="form-control" placeholder="Task Name">
+                                </div>
+                                <div>
+                                    <input type="submit" value="Add task" class="btn btn-warning mt-2">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Task List-->
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="list-group" id="task-list">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--END-->
+    </div>
+    <!---------------------END HERE---------------------->
+    
+    <div style="margin-bottom: 20px;"></div>
+
+    <!--Bootstrap JS Files-->
+    <script src="../Bootsrap/3 BS JQuery/jquery-3.6.0.min.js"></script>
+    <script src="../Bootsrap/4 BS Popper/popper.min.js"></script>
+    <script src="../Bootsrap/5 BS JS/bootstrap.js"></script>
+    <script src="../Bootsrap/5 BS JS/mdb.min.js"></script>
+    <!--Local Js File-->
+    <script src="../Js/30 Task List App_1-LocalStorage.js"></script>
+</body>
+</html>

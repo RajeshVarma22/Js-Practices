@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+</head>
+<body>
+  <h1 class="practice" style="text-align: center;">Practice</h1>
+  <script>
+    a1 = [
+      {
+        ob : 1,
+        skdh: {
+          hadj:"sadkjk"
+        }
+      },
+      {
+        ob : 2,
+        skdh: {
+          hadj:"sadkjk"
+        }
+      },
+      {
+        ob : 21,
+        skdh: {
+          hadj:"sadkjk"
+        }
+      }
+    ]
+
+    console.log(a1)
+    let ob = 12
+    a1.forEach(element => {
+      console.log(element)
+      if(element.ob === ob) {
+        console.log(a1.find(Object.keys))
+      }
+    });
+    const getKey = (obj,val) => Object.keys(obj).find(key => obj[key] === val);
+    console.log(getKey(a1))
+  </script>
+</body>
+</html>

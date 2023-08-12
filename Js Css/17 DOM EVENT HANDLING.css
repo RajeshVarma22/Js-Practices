@@ -1,0 +1,52 @@
+h1{
+    background-color: aquamarine;
+    border-radius: 20px;
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: solid;
+    box-shadow: 5px 5px 5px black;
+}
+#div1{
+    background:linear-gradient(45deg,pink,tomato,salmon,white,violet,red,orange );
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px teal;
+    text-align: center;
+    margin: 15px;
+}
+div h2{
+    text-shadow: yellowgreen;
+}
+div button{
+    background-color: aqua;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 10px;
+    color: blue;
+    font-size: 20px;
+}
+div ol{
+    background-color: cadetblue;
+    margin: 10px;
+    text-align: left;
+    padding: 50px;
+}
+#div2{
+    background-color: thistle;
+    text-align: center;
+}
+#div2 button{
+    background-color: aqua;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 10px;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+}
+#sthortCut{
+    color: aliceblue;
+    padding: 20px;
+}
