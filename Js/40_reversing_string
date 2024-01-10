@@ -1,0 +1,10 @@
+function revStr(str) {
+  if (str === "" ) {
+    return ""
+  } else {
+    return revStr(str.substr(1))+str.charAt(0)
+  }
+}
+let string = "RAJ"
+let ans = revStr(string)
+console.log(ans)
